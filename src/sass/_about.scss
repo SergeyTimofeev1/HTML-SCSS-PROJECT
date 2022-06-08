@@ -1,0 +1,44 @@
+.about {
+  text-align: center;
+
+  &__container {
+    
+  }
+
+  &__subheader {
+    margin-bottom: 32px;
+  }
+
+  &__header {
+    @include adaptiv-value('margin-bottom', 50, 10, 1);
+  }
+
+  &__text {
+    display: inline-block;
+    max-width: 846px;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 61px;
+  }
+
+  &__item {
+    &:nth-child(2) {
+      margin-top: 60px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 24px;
+
+    button {
+      position: absolute;
+      top: -30px;
+      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.relevant {
+  text-align: center;
+  &__subheader {
+    margin-bottom: 32px;
+  }
+
+  &__header {
+    font-weight: 700;
+    @include adaptiv-value('margin-bottom', 64, 10, 0);
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 17px;
+  }
+
+  &__item {
+    @include adaptiv-value('padding', 80, 15, 1);
+    @include adaptiv-value('width', 411, 300, 0);
+    @include adaptiv-value('height', 380, 240, 0);
+    text-align: left;
+    background-color: #FFF5EB;
+    border-bottom: 16px solid #ffd2a4;
+  }
+
+  &__item-icon {
+    margin-bottom: 24px;
+  }
+
+  &__item-title {}
+
+  &__item-text {
+    max-width: 251px;
+    line-height: 24px;
+  }
+}

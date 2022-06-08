@@ -1,0 +1,87 @@
+.sermons {
+  text-align: center;
+
+  &__header {
+    font-weight: 700;
+    @include adaptiv-value('margin-bottom', 64, 10, 0);
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+.card {
+  padding: 60px 90px;
+  background-color: $secondary-color;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  &__info-text {
+    align-self: flex-end;
+    font-size: 12px;
+    font-weight: 700;
+    background-image: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__info-datenum {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &__info-datemounth {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    max-width: 210px;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    min-width: 256px;
+    margin-bottom: 32px;
+  }
+}
+
+.contacts-card {
+  padding-left: 38px;
+  max-width: 220px;
+  margin-bottom: 32px;
+  text-align: left;
+  &__time {
+    margin-bottom: 16px;
+      position: relative;
+    &::after {
+      position: absolute;
+      left: -36px;
+      right: 0;
+      top: 0;
+      content: url('../icons/clock.svg');
+    }
+  }
+
+  &__adress {
+    position: relative;    
+    &::after {
+      position: absolute;
+      left: -36px;
+      right: 0;
+      top: 0;
+      content: url('../icons/search.svg');
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.main-section {
+  color: $text-color;
+  text-transform: uppercase;
+  background: url('../img/main-section.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__container {}
+
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    max-width: 502px;
+    margin-bottom: 31px;
+    line-height: 82px;
+    @include adaptiv-value('line-height', 82, 10, 1);
+  }
+
+  &__button {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    padding-left: 30px;
+    max-width: 308px;
+    line-height: 24px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 11px;
+      left: 0;
+      width: 18px;
+      border: 1px solid #ffd2a4;
+    }
+  }
+}
